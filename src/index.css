@@ -1,7 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html, body {
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-}
+@tailwind base; @tailwind components; @tailwind utilities;
+html,body{font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial;background:#F7FBFF;color:#0a0a0a}
+.card{ @apply rounded-2xl bg-white shadow-soft border border-baby-200; }
+.btn{ @apply rounded-xl px-4 py-2 font-medium; }
+.btn-primary{ @apply bg-baby-500 hover:bg-baby-600 text-white; }
+.btn-ghost{ @apply bg-white hover:bg-baby-100 border border-baby-300; }
+.badge{ @apply text-xs px-2 py-0.5 rounded-full bg-baby-100 border border-baby-300; }
+.progress{ @apply h-3 w-full rounded-full bg-baby-200 overflow-hidden border border-baby-300; }
+.progress-fill{ @apply h-full bg-baby-600; transition: width .3s ease; }
+.menu{ @apply rounded-xl bg-white border border-baby-300 shadow-soft; }
+.input{ @apply w-full px-3 py-2 rounded-xl border border-baby-300 bg-white outline-none focus:ring-2 focus:ring-baby-400; }
